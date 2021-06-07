@@ -1,0 +1,60 @@
+/* Small Exercise */
+#me {
+    border-radius: 100%;
+    animation-name: move-image;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes move-image {
+    from {
+        margin-left: 0px;
+    }
+    to {
+        margin-left: 200px;
+    }
+}
+
+.main {
+    margin: 0 auto;
+    max-width: 100px;
+    text-align: center;
+  }
+
+  @keyframes bounce {
+    to {
+      top: 0;
+    }
+    from {
+      top: 100px;
+    }
+  }
+
+  .ball {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: red;
+    border-radius: 50%;
+    animation: bounce 1s ease-out 0s 10 alternate-reverse;
+  }
+  body {
+    margin-top: 100px;
+    text-align: center;
+    width: 500px auto;
+  }
+  .heart {
+      font-size: 100px;
+      transform-origin: center;
+      animation: heartbeat 1s infinite alternate;
+  }
+
+  @keyframes heartbeat {
+      to {
+        transform: scale(1.5);
+      }
+  }
+  .container {
+    margin: 0 auto;
+    max-width: 100px;
+  }

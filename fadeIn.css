@@ -1,0 +1,60 @@
+.container {
+    display: flex;
+    align-items: center;
+}
+.image {
+    opacity: 0;
+    animation-name: fade;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.main {
+    opacity: 0;
+    animation-name: fade;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 500ms;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        right: 20px;
+    }
+    to {
+        opacity: 1;
+        right: 0;
+    }
+}
+/* 
+.container {
+    margin: 0 auto;
+    padding-top: 100px;
+    max-width: 700px;
+    display: flex;
+    align-items: center;
+  }
+
+  @keyframes fade-in-item {
+    from {
+      opacity: 0;
+      right: 20px;
+    }
+    to {
+      opacity: 1;
+      right: 0;
+    }
+  }
+
+  .image {
+    opacity: 0;
+    position: relative;
+    margin-right: 20px;
+    animation: fade-in-item 1s forwards;
+  }
+
+  .main {
+    opacity: 0;
+    position: relative;
+    animation: fade-in-item 1s forwards 500ms;
+  } */
